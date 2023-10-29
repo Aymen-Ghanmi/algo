@@ -1,0 +1,21 @@
+ALGORITHM checkpoint
+VAR
+    character length :=0 , number of words:=0 , number of vowels:=0;
+BEGIN
+
+FOR EACH character in sentence
+    IF character is not a space and not a point
+        Increment length by 1
+        IF character is a vowel (a, e, i, o, u, A, E, I, O, U)
+            Increment vowel_count by 1
+    ELSE IF character is a space
+        Increment word_count by 1
+
+
+
+Read "Length of the sentence: " + length
+Read "Number of words in the sentence: " + word_count
+Read "Number of vowels in the sentence: " + vowel_count
+
+
+END
